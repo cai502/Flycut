@@ -1241,6 +1241,7 @@
 	
     [jcPasteboard setString:pbFullText forType:@"NSStringPboardType"];
     [self setPBBlockCount:[NSNumber numberWithInt:[jcPasteboard changeCount]]];
+    [clippingStore clearItem:indexInt];
     return true;
 }
 

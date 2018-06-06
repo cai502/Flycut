@@ -59,7 +59,8 @@
         [jcList removeObject:clipping];
     }
     // Push it onto our recent clippings stack
-	[jcList insertObject:clipping atIndex:0];
+    [jcList addObject:clipping];
+//	[jcList insertObject:clipping atIndex:0];
 	// Delete clippings older than jcRememberNum
 	while ( [jcList count] > jcRememberNum ) {
 		[jcList removeObjectAtIndex:jcRememberNum];
